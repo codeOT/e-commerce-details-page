@@ -1,0 +1,439 @@
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(0, 0%, 100%);
+    padding: 0;
+    margin: 0;
+}
+.container{
+    margin-bottom: 2rem;
+}
+.header{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list{
+    position: absolute;
+    left: -1rem;
+    top: -2rem;
+    width: 70%;
+    height: 168vh;
+    text-transform: capitalize;
+    font-weight: 700;
+    display: none;
+}
+input{
+    display: none;
+}
+.list ul{
+    padding: 3rem 0 0 3rem;
+    line-height: 3rem;  
+}
+.list li{
+    list-style: none ;
+}
+.list li a{
+    text-decoration: none;
+    color: hsl(220, 13%, 13%);
+    padding-top: 10px;
+    padding-bottom: 2.8rem;
+}
+.list .list-close{
+    padding: 5rem 0 0 3rem;
+
+}
+.h-logo .sneakers {
+    margin-left: 15px;
+}
+.avatar:hover{
+    border: 1px solid hsl(26, 100%, 55%);
+    border-radius: 20px;
+}
+.images{
+    display: none;
+}
+.c-img{
+    display: flex;
+    justify-content: space-around;
+}
+.c-nav{
+    display: flex;
+}
+.cart-texts{
+    position: relative;
+    right: 2.5rem;
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(26, 100%, 55%);
+    border-radius: 30px;
+    padding: 2px;
+    height: 20px;
+}
+.c-img .cart{
+    margin-right: 25px;
+}
+.img1 img{
+    width: 100%;
+    height: 10%;
+}
+#checkbox:checked ~ .list{
+    display: block;
+}
+.cart-items-list{
+    position: absolute;
+    /* height: 70%; */
+    top: 7rem;
+    left: 1.5rem;
+    width: 90%;
+    border-radius: 10px;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px #888,
+    -2px -2px 5px #aaa;
+
+    
+}
+.cart-items-list .cart-d{
+    padding: 2rem;
+    text-transform: capitalize;
+}
+.cart-d{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-inside{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+}
+.cart-inside img{
+    border-radius: 10px;
+}
+.cart-img{
+    height: 80px;
+}
+.c-text{
+    padding-top: 0.2rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+.numList{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.c-btn{
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+}
+.c-btn button{
+    background-color:hsl(26, 100%, 55%) ;
+    width: 80%;
+    padding: 1.5rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%) ;
+}
+.cart-items{
+    position: absolute;
+    height: 70%;
+    top: 7rem;
+    left: 1.5rem;
+    width: 90%;
+    border-radius: 10px;
+    display: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px #888,
+    -2px -2px 5px #aaa;
+}
+.cart-items h2{
+    padding: 2rem;
+    text-transform: capitalize;
+}
+.msg{
+    text-align: center;
+    padding-top: 5rem;
+
+}
+.content-texts{
+  padding: 1.5rem;  
+}
+.content-inner-texts h2{
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: hsl(26, 100%, 55%);
+}
+.content-inner-texts h1{
+    text-transform: capitalize;
+    width: 70%;
+    font-weight: 700;
+}
+.content-inner-texts p{
+    font-weight: 700;
+    padding: 1.5rem 0 1.5rem 0;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.price span{
+    font-size: 16px;
+    padding: 5px;
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+}
+.price h2{
+    color: #aaa;
+    font-size: 16px;
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 20px 2rem 20px;
+    font-size: 1rem;
+}
+button{
+    border: none;   
+}
+button:hover{
+    opacity: 0.7;
+}
+.a-cart img{
+    
+    padding-right: 10px;
+}
+.a-cart button{
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(26, 100%, 55%) ;
+    padding: 1rem;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+}
+.a-cart button:hover{
+    background-color: hsl(25, 95%, 64%);
+    
+}
+
+@media (max-width: 386px) {
+    .cart-inside{
+        height: 5%;
+        padding-top: 0rem;
+    }
+    .c-btn{
+        padding-top: 1rem;
+    }
+    .c-btn button{
+        background-color:hsl(26, 100%, 55%) ;
+        width: 80%;
+        padding: 1rem;
+        font-weight: 700;
+        font-size: 1rem;
+        border-radius: 10px;
+        color: hsl(0, 0%, 100%) ;
+    }
+    .c-text{
+        padding-left: 1rem;
+    }
+    
+    
+}
+@media (min-width: 768px) {
+    .container{
+        padding-bottom: 1rem;
+    }
+    .header{
+        padding: 0rem;
+        padding-top: 2rem;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+    }
+    .list li:hover{
+        background-color:  hsl(25, 95%, 64%);
+        height: 4rem;
+        
+    }
+    .h-logo .sneakers {
+        margin-left: 0px;
+    }
+    .h-logo .menu{
+        display: none;
+    }
+   
+    .cart-items{
+        position: absolute;
+        height: 50%;
+        top: 7rem;
+        left: 28rem;
+        width: 40%;
+        margin: 0;
+        /* display: block; */
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px 2px #888,
+        -2px -2px 5px #aaa;
+        
+    }
+    .cart-items-list{
+        position: absolute;
+        height: 50%;
+        top: 7rem;
+        left: 20rem;
+        width: 50%;
+        /* display: block; */
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px 2px #888,
+        -2px -2px 5px #aaa;
+    }
+    .cart-inside{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 1rem;
+    }
+    .cart-inside img{
+        border-radius: 10px;
+    }
+    .cart-img{
+        height: 100px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .c-text{
+        padding-top: 2rem;
+        padding-left: 10px;
+        font-weight: 700;
+        line-height: 1.6rem;
+    }
+    .c-btn{
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    .c-btn button{
+        background-color:hsl(26, 100%, 55%) ;
+        width: 80%;
+        padding: 1.2rem;
+        font-weight: 700;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        color: hsl(0, 0%, 100%) ;
+    }
+    .list{
+        position: relative;
+        left: 13rem;
+        top: -1.29rem;
+        width: 0;
+        height:0;
+        text-transform: capitalize;
+        font-weight: 700;
+        display: flex;
+    }
+    .list ul{
+        padding: 0;
+        line-height: 1rem; 
+        display: flex; 
+    }
+    .list li{
+        list-style: none ;
+        margin-left: 13px;
+    }
+    .list li a{
+        text-decoration: none;
+        color: hsl(220, 13%, 13%);
+        font-size: 13px;
+    }
+    .list .list-close{
+        padding:0;
+        display: none;
+    
+    }
+    .images{
+        margin-left: 1rem;
+        padding-top: 1.5rem;
+        display: flex;
+        justify-content: space-around;
+    }
+    .p1{
+        border-radius: 10px;
+    }
+    .p2{
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+    .p3{
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+    .p4{
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+    .p1:hover{
+        opacity: 0.5;
+        border: 1px solid hsl(26, 100%, 55%);
+    }
+    .p2:hover{
+        opacity: 0.5;
+        border: 1px solid hsl(26, 100%, 55%);
+    }
+    .p3:hover{
+        opacity: 0.5;
+        border: 1px solid hsl(26, 100%, 55%);
+    }
+    .p4:hover{
+        opacity: 0.5;
+        border: 1px solid hsl(26, 100%, 55%);
+    }
+    .content{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 5rem;
+        max-width: 1200px; 
+    }
+    .content-texts{
+        margin-left: 2rem;
+        
+    }
+    
+    .img1 img{
+        width: 100%;
+        margin-left: 1rem;
+        border-radius: 10px;
+    }
+    .price{
+        display: block;
+        line-height: 2rem;
+    }
+    .add{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-top: 2rem;
+    }
+    .btns{
+        width: 40%;   
+    }
+    .a-cart{
+        width: 50%;
+        padding-top: 1rem;
+    }
+    .a-cart button{
+        width: 100%;
+        color: hsl(0, 0%, 100%);
+        background-color: hsl(26, 100%, 55%) ;
+        padding: 1rem;
+        border-radius: 10px;
+        text-transform: capitalize;
+        font-size: 0.9rem;
+    }
+
+}

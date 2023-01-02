@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=Public+Sans:wght@100&display=swap"
+        rel="stylesheet">
+    <title>E-COMMERCE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="h-logo">
+                <label for="checkbox">
+                    <img src="images/icon-menu.svg" alt="" class="menu">
+                    <!-- <img src="images/icon-close.svg" alt="" class="close"> -->
+                </label>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <img src="images/logo.svg" alt="" class="sneakers">
+                <div class="list">
+
+                    <label for="checkbox">
+                        <img src="images/icon-close.svg" alt="" class="list-close">
+                    </label>
+                    <ul>
+                        <li><a href="#">collections</a></li>
+                        <li><a href="#">men</a></li>
+                        <li><a href="#">women</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">contact</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="c-img">
+                <div class="c-nav">
+                    <img src="images/icon-cart.svg" alt="" class="cart">
+                    <h2 class="cart-texts result-2"></h2>
+                    <img src="images/image-avatar.png" alt="" height="27" class="avatar">
+                </div>
+
+                <div class="cart-items">
+                    <h2> cart</h2>
+                    <hr>
+                    <h3 class="msg"></h3>
+                </div>
+                <div class="cart-items-list">
+                    <div class="cart-d">
+                        <h2>cart</h2>
+                        <img src="images/icon-close.svg" alt="" height="15" class="exit" onclick="close()">
+                    </div>
+
+                    <hr>
+                    <div class="cart-inside">
+                        <img src="images/image-product-1-thumbnail.jpg" alt="" class="cart-img">
+                        <div class="c-text">
+                            <h3>Fall Limited Edition sneakers</h3>
+                            <p> $125 x <span class="numList"></span></p>
+                        </div>
+
+                    </div>
+                    <div class="c-btn">
+                        <button>Checkout</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="img-1">
+                <div class="img1">
+                    <img src="images/image-product-1.jpg" alt="">
+                </div>
+                <div class="images">
+                    <img src="images/image-product-1-thumbnail.jpg" alt="" height="80" class="p1">
+                    <img src="images/image-product-2-thumbnail.jpg" alt="" height="80" class="p2">
+                    <img src="images/image-product-3-thumbnail.jpg" alt="" height="80" class="p3">
+                    <img src="images/image-product-4-thumbnail.jpg" alt="" height="80" class="p4">
+                </div>
+            </div>
+
+            <div class="content-texts">
+                <div class="content-inner-texts">
+                    <h2>sneaker company</h2>
+                    <h1>fall limited edition sneakers</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dicta,
+                        voluptatibus dignissimos dolores beatae excepturi, esse obcaecati
+                        nulla, magnam exercitationem corporis dolorem sit!</p>
+                </div>
+                <div class="price">
+                    <h1>$125.00 <span> 50% </span></h1>
+                    <h2> <del>$250.00</del> </h2>
+                </div>
+                <div class="add">
+                    <div class="btns">
+                        <button class="decrease" onclick="decrease()"> <img src="images/icon-minus.svg" alt=""></button>
+                        <h2 class="result"></h2>
+                        <button class="increase" onclick="increase()"> <img src="images/icon-plus.svg" alt=""></button>
+                    </div>
+                    <div class="a-cart">
+                        <button class="add-cart" onclick="addCart()"> <img src="images/icon-cart.svg"
+                                style="background: none;" alt=""> add to cart</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

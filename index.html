@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=Public+Sans:wght@100&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <title>E-COMMERCE</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -76,9 +77,22 @@
         </div>
         <div class="content">
             <div class="img-1">
-                <div class="img1">
-                    <img src="images/image-product-1.jpg" alt="">
+                <div class="img1 swiper">
+
+                    <div class="swiper-wrapper swp">
+                        <img class="swiper-slide" src="images/image-product-1.jpg" alt="">
+                        <img class="swiper-slide" src="images/image-product-2.jpg" alt="">
+                        <img class="swiper-slide" src="images/image-product-3.jpg" alt="">
+                        <img class="swiper-slide" src="images/image-product-4.jpg" alt="">
+
+                    </div>
+
+                    <div class="swiper-button-prev s-bt"></div>
+                    <div class="swiper-button-next s-bt"></div>
+
                 </div>
+
+
                 <div class="images">
                     <img src="images/image-product-1-thumbnail.jpg" alt="" height="80" class="p1">
                     <img src="images/image-product-2-thumbnail.jpg" alt="" height="80" class="p2">
@@ -114,8 +128,9 @@
 
         </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+
 </body>
 
 </html>

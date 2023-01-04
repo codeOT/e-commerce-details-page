@@ -73,10 +73,25 @@ input{
 .c-img .cart{
     margin-right: 25px;
 }
-.img1 img{
+.img-1{
     width: 100%;
-    height: 10%;
+    position: relative;
+    
 }
+.img1 img{
+    object-fit: fill;
+   
+} 
+
+
+.swiper {
+    width: 400px;
+    height:60vh;
+}
+.s-bt{
+    background: transparent;
+}
+
 #checkbox:checked ~ .list{
     display: block;
 }
@@ -92,7 +107,7 @@ input{
     box-shadow: 2px 2px 5px 2px #888,
     -2px -2px 5px #aaa;
 
-    
+    z-index: 2;
 }
 .cart-items-list .cart-d{
     padding: 2rem;
@@ -223,6 +238,10 @@ button:hover{
 }
 
 @media (max-width: 386px) {
+    .swiper {
+        width: 380px;
+        height:60vh;
+    }
     .cart-inside{
         height: 5%;
         padding-top: 0rem;
@@ -246,6 +265,10 @@ button:hover{
     
 }
 @media (min-width: 768px) {
+    .swiper {
+        width: 390px;
+        height:60vh;
+    }
     .container{
         padding-bottom: 1rem;
     }
